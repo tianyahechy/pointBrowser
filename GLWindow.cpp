@@ -105,7 +105,7 @@ void GLWindow::RenderGL()
 	static const GLfloat black[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	glClearBufferfv(GL_COLOR, 0, black);
 	glUseProgram(g_Program);
-	glDrawArrays(GL_POINTS, 0, 1);
+	glDrawArrays(GL_TRIANGLES, 0, 3);
 }
 
 void GLWindow::ReleaseGL()
